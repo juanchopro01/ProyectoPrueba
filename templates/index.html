@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{% static 'css/pro.css' %}">
+</head>
+<body>
+    
+    <div class="hero"> 
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    <header>
+        <nav>
+            <div class="logo">COPA DEL MUNDO FIFA 2026</div>
+            <div class="navbar">
+                <ul class="nav-links">
+                </ul>
+            </div>
+            <img src="{% static 'images/2026_FIFA_World_Cup.png' %}" alt="imagen admin" class="center-image" width="100px">
+            <ul class="nav-links">
+                <h1>ORGANIZA Y GESTIONA LA COPA DEL MUNDO</h1>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>¡BIENVENIDO FUTBOLERO!</h1>
+            <p>INICIA SESION PARA GESTIONAR LA COPA DEL MUNDO</p>
+            <a href="{% url 'login' %}" class="cta-button">INICIAR <br> SESION</a>
+            <a href="{% url 'equipos' %}" class="cta-button">Equipos <br> Clasificados</a>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <h2 class="footer-title">SOBRE LA COPA</h2> 
+            <p class="footer-text">
+                La Copa Mundial de la FIFA, también conocida como la Copa del Mundo, es el torneo internacional de fútbol masculino más prestigioso del mundo. Aquí tienes una breve historia de la Copa del Mundo:
+            </p>
+            <ol class="footer-list">
+                Primera Copa Mundial (1930): La idea de una competición internacional de fútbol a nivel mundial fue propuesta por primera vez por Jules Rimet, el entonces presidente de la FIFA. La primera Copa Mundial se celebró en Uruguay en 1930, y participaron 13 equipos. Uruguay se consagró campeón al vencer a Argentina en la final.</li>
+                <li>Interrupción durante la Segunda Guerra Mundial: Después de las dos primeras ediciones, la Copa Mundial se suspendió debido a la Segunda Guerra Mundial, y no se llevó a cabo en 1942 y 1946.</li>
+                <li>Expansión y Dominio Sudamericano: La Copa del Mundo se reanudó en 1950 en Brasil. En esta edición, se introdujo la fase de grupos y se decidió el campeón con una fase final. Uruguay sorprendió al derrotar a Brasil en la famosa "Final del Maracaná".</li>
+                <li>Años de Desarrollo (1954-1970): Durante estos años, la Copa del Mundo se consolidó como un evento deportivo de gran envergadura. Brasil emergió como una potencia futbolística, ganando tres títulos en cuatro torneos (1958, 1962, 1970).</li>
+                <li>Época de Dominio Europeo (1974-2006): A partir de la Copa Mundial de 1974 en Alemania, las naciones europeas dominaron la competición. Alemania, Italia, Francia y España fueron algunas de las naciones que ganaron el torneo en este período.</li>
+                <li>Expansión de Equipos y Eventos Memorables: La Copa Mundial se expandió a 24 equipos en 1982 y a 32 equipos en 1998. Durante estos años, se vivieron momentos inolvidables, como el "Gol del Siglo" de Diego Maradona en 1986 y la victoria de Estados Unidos sobre Inglaterra en 1950.</li>
+                <li>Copa del Mundo Femenina: Aunque esta historia se centra en la Copa Mundial masculina, cabe destacar que la Copa Mundial Femenina de la FIFA se estableció en 1991, brindando una plataforma para el fútbol femenino a nivel internacional.</li>
+                <li>Copa Mundial 2010 en Sudáfrica: Esta edición fue histórica ya que fue la primera vez que se celebró en el continente africano. España se llevó el título al vencer a los Países Bajos en la final.</li>
+                <li>Copa Mundial 2014 en Brasil: Alemania se consagró campeona al vencer a Argentina en la final. Además, el torneo fue recordado por la espectacular goleada 7-1 de Alemania sobre Brasil en las semifinales.</li>
+                <li>Copa Mundial 2018 en Rusia: Francia ganó su segundo título al vencer a Croacia en la final. El torneo fue notable por el desempeño de equipos sorpresa y momentos emocionantes.</li>
+            </ol>
+            <p class="footer-text">
+                La Copa Mundial de la FIFA continúa siendo un evento destacado en el mundo del deporte, atrayendo la atención de millones de aficionados de todo el mundo cada cuatro años.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

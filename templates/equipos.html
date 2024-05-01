@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/equipos.css' %}">
+    <title>Selecciones Clasificadas - Mundial 2026</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'images/2026_FIFA_World_Cup.png' %}" alt="imagen admin" class="center-image" width="150px">
+        <h1>Selecciones Clasificadas - Mundial 2026</h1>
+        <div class="teams-list">
+            <ul id="teams-list">
+                <li class="team-item" data-country="Brasil" style="display:inline-block;">
+                    <img src="{% static 'images/brasil.jpg' %}" alt="Bandera de Brasil" class="team-flag">
+                    <span class="team-name">BRASIL</span>
+                </li>
+                <li class="team-item" data-country="Argentina" style="display:inline-block;">
+                    <img src="{% static 'images/argentina.avif' %}" alt="Bandera de Argentina" class="team-flag">
+                    <span class="team-name">ARGENTINA</span>
+                </li>
+                <li class="team-item" data-country="Alemania" style="display:inline-block;">
+                    <img src="{% static 'images/alemania.png' %}" alt="Bandera de Alemania" class="team-flag">
+                    <span class="team-name">ALEMANIA</span>
+                </li>
+                <li class="team-item" data-country="Brasil" style="display:inline-block;">
+                    <img src="{% static 'images/col.jfif' %}" alt="Bandera de Brasil" class="team-flag">
+                    <span class="team-name">COLOMBIA</span>
+                </li>
+
+                <li class="team-item" data-country="Argentina" style="display:inline-block;">
+                    <img src="{% static 'images/inglaterra.jfif' %}" alt="Bandera de Argentina" class="team-flag">
+                    <span class="team-name">INGLATERRA</span>
+                </li>
+                <li class="team-item" data-country="Alemania" style="display:inline-block;">
+                    <img src="{% static 'images/francia.jfif' %}" alt="Bandera de Alemania" class="team-flag">
+                    <span class="team-name">FRANCIA</span>
+                </li>
+
+                <li class="team-item" data-country="Alemania" style="display:inline-block;">
+                    <img src="{% static 'images/portugal.jfif' %}" alt="Bandera de Alemania" class="team-flag">
+                    <span class="team-name">PORTUGAL</span>
+                </li>
+
+                <li class="team-item" data-country="Alemania" style="display:inline-block;">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'images/2026_FIFA_World_Cup.png' %}" alt="Bandera de Alemania" class="team-flag">
+                        <span class="team-name">Volver</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="balloons-container" id="balloons-container"></div>
+    </div>
+    <script src="{% static 'js/balones.js' %}"></script>
+</body>
+</html>

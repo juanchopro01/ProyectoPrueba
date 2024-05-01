@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right top, #000000, rgb(0, 0, 0), rgb(0, 0, 0), #eeac13, rgb(201, 99, 14));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    overflow: hidden; 
+}
+
+.teams-list {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.team-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+h1 {
+    color: #333;
+}
+
+.balloons-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.balloon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 5.5em;
+    line-height: 40px;
+    text-align: center;
+    animation: balloonAnimation 2s infinite;
+}
+
+@keyframes balloonAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.team-flag {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+
+
+
+

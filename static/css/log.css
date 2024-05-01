@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(to right top, #e22b17, #000000, #0c023b, #000000, #000000); /* gradiente para el fondo de pantalla */
+}
+
+.container {
+    background-color: rgba(249, 108, 0, 0.9); /* color de fondo para el */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #051937; /* color oscuro del titulo del encabezado del container */
+}
+
+.form-label {
+    color: #051937; /* color de los labels dentro del container */
+}
+
+
+.btn-primary:hover {
+    background-color: #008793; /* Color del botón al pasar el ratón */
+}
+
+.btn-center {
+    text-align: center;
+}
